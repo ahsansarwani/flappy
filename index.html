@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Racer — Offline</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="vendor/phaser.min.js"></script>
+  <script defer src="vendor/vue.global.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <!-- Phaser game layer (renders behind the UI) -->
+  <div id="phaser-game"></div>
+
+  <!-- CRT scanlines + vignette (decorative, pointer-events: none) -->
+  <div class="canvas-scanlines"></div>
+  <div class="canvas-vignette"></div>
+
+  <!-- Vue root: UI is composed from components in js/components/ -->
+  <div id="app"></div>
+</body>
+</html>
